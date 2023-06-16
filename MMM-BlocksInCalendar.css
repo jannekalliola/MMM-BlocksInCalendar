@@ -18,6 +18,10 @@
     width: 9%;
 }
 
+.MMM-BICalendar-table td.MMM-BICalendar-monthDivider { 
+    border-top: 1px solid rgb(153, 153, 153);
+}
+
 .MMM-BICalendar-weekday-day {
     text-align: center;
     font-weight: bold;
@@ -40,8 +44,12 @@ td.MMM-BICalendar-month {
     line-height: 1;
 }
 
-.MMM-BICalendar-evenMonth {
-    background-color: #0f0f0f;
+td.MMM-BICalendar-firstWeekOfMonth {
+    border-top: 1px solid rgb(153, 153, 153);
+}
+
+td.MMM-BICalendar-firstDayOfMonth {
+    border-left: 1px solid rgb(153, 153, 153);
 }
 
 .MMM-BICalendar-day {
@@ -49,6 +57,7 @@ td.MMM-BICalendar-month {
 }
 
 .MMM-BICalendar-today {
+    background-color: #000;
     font-weight: bold;
     filter: invert(0.7);
     color: #fff;

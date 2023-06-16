@@ -176,7 +176,10 @@ Module.register("MMM-BlocksInCalendar", {
 				let monthName = document.createElement('div');
 				monthName.innerHTML = curDate.format('M');
 				monthName.className = 'MMM-BICalendar-monthName';
-
+				if(i > 0) {
+					monthCell.className = monthCell.className + ' MMM-BICalendar-monthDivider';
+				}
+				
 				monthCell.appendChild(monthName);
 				row.appendChild(monthCell);
 				monthWeeks = 0;
@@ -215,6 +218,14 @@ Module.register("MMM-BlocksInCalendar", {
 
 				let dayNumber = document.createElement('div');
 				dayNumber.innerHTML = curDate.format('D');
+
+				if(curDate.format('D') < 8 && i > 0) {
+					dayCell.className = dayCell.className + ' MMM-BICalendar-firstWeekOfMonth';
+				}
+				if(curDate.format('D') < 2 && j > 0) {
+					dayCell.className = dayCell.className + ' MMM-BICalendar-firstDayOfMonth';
+				}
+
 				dayCell.appendChild(dayNumber);
 
 				if(activeEventCount > 0) {
