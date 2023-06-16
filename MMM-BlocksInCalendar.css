@@ -1,0 +1,121 @@
+.MMM-BICalendar-table {
+    border-spacing: 0px;
+    max-width: 380px;
+    table-layout: fixed;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+} 
+
+.MMM-BICalendar-table td {
+    width: 13%;
+    vertical-align: top;
+    padding: 0px;
+}
+
+.MMM-BICalendar-table td.MMM-BICalendar-month, 
+.MMM-BICalendar-table td.MMM-BICalendar-weekday-month {
+    width: 9%;
+}
+
+.MMM-BICalendar-weekday-day {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+td.MMM-BICalendar-month {
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.MMM-BICalendar-monthName {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.MMM-BICalendar-evenMonth {
+    background-color: #0f0f0f;
+}
+
+.MMM-BICalendar-day {
+    text-align: center;
+}
+
+.MMM-BICalendar-today {
+    font-weight: bold;
+    filter: invert(0.7);
+    color: #fff;
+}
+
+.MMM-BICalendar-stripContainer {
+    background-color: inherit;
+}
+
+.MMM-BICalendar-stripContainer div {
+    height: 12px;
+    margin-bottom: 4px;
+    font-size: 9px;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 5px;
+    white-space: nowrap;
+    overflow: none;
+}
+
+.MMM-BICalendar-stripEmpty {
+    margin-top: 2px;
+    z-index: 1;
+    background-color: inherit;
+    position: relative;
+}
+
+div.MMM-BICalendar-stripStart {
+    margin-left: 3px;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    border-left: 1px solid #999999;
+}
+
+div.MMM-BICalendar-stripMiddle {
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    padding-left: 11px;
+}
+
+div.MMM-BICalendar-stripEnd {
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    border-right: 1px solid #999999;
+    padding-left: 11px;
+    position: relative;
+    overflow: hidden;
+}
+
+div.MMM-BICalendar-stripEndPadding {
+    width: 3px;
+    padding: 0px;
+    position: relative;
+    float: right;
+    background-color: inherit;
+    z-index: 1;
+}
+    
+div.MMM-BICalendar-stripEndInnerPadding {
+    width: 5px;
+    padding: 0px;
+    position: relative;
+    float: right;
+    background-color: inherit;
+    z-index: 1;
+}
+    
+.MMM-BICalendar-stripText {
+    position: absolute;
+}
