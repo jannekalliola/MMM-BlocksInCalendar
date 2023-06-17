@@ -156,7 +156,7 @@ Module.register("MMM-BlocksInCalendar", {
 		for(let i = 0; i < 7; i++) {	
 			dCell = document.createElement('td');
 			dCell.innerHTML = dayDate.format('dd');
-			dCell.className = 'MMM-BICalendar-weekday-day';
+			dCell.className = 'bright MMM-BICalendar-weekday-day';
 			dayDate.add(1, 'day');
 			dRow.appendChild(dCell);
 		}
@@ -171,7 +171,7 @@ Module.register("MMM-BlocksInCalendar", {
 				curMonth = curDate.month();
 				monthCell = document.createElement('td');
 				monthCell.innerHTML
-				monthCell.className = 'MMM-BICalendar-month ' + ((curMonth % 2 == 1) ? 'MMM-BICalendar-evenMonth' : 'MMM-BICalendar-oddMonth');
+				monthCell.className = 'bright MMM-BICalendar-month ' + ((curMonth % 2 == 1) ? 'MMM-BICalendar-evenMonth' : 'MMM-BICalendar-oddMonth');
 
 				let monthName = document.createElement('div');
 				monthName.innerHTML = curDate.format('M');
@@ -213,7 +213,7 @@ Module.register("MMM-BlocksInCalendar", {
 				}
 
 				let dayCell = document.createElement('td');
-				dayCell.className = 'MMM-BICalendar-day ' + ((curDate.month() % 2 == 1) ? 'MMM-BICalendar-evenMonth' : 'MMM-BICalendar-oddMonth') + ((curDate.isSame(today)) ? ' MMM-BICalendar-today' : '');
+				dayCell.className = 'bright MMM-BICalendar-day ' + ((curDate.month() % 2 == 1) ? 'MMM-BICalendar-evenMonth' : 'MMM-BICalendar-oddMonth') + ((curDate.isSame(today)) ? ' MMM-BICalendar-today' : '');
 				row.appendChild(dayCell);
 
 				let dayNumber = document.createElement('div');
