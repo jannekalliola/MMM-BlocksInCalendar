@@ -213,7 +213,7 @@ Module.register("MMM-BlocksInCalendar", {
 				}
 
 				let dayCell = document.createElement('td');
-				dayCell.className = 'bright MMM-BICalendar-day ' + ((curDate.month() % 2 == 1) ? 'MMM-BICalendar-evenMonth' : 'MMM-BICalendar-oddMonth') + ((curDate.isSame(today)) ? ' MMM-BICalendar-today' : '');
+				dayCell.className = 'bright MMM-BICalendar-day MMM-BICalendar-weekday-day-' + (j + 1) + ((curDate.month() % 2 == 1) ? ' MMM-BICalendar-evenMonth' : ' MMM-BICalendar-oddMonth') + ((curDate.isSame(today)) ? ' MMM-BICalendar-today' : '');
 				row.appendChild(dayCell);
 
 				let dayNumber = document.createElement('div');

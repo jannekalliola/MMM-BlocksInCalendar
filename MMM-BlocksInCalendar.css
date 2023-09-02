@@ -11,6 +11,7 @@
     width: 13%;
     vertical-align: top;
     padding: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0);
 }
 
 .MMM-BICalendar-table td.MMM-BICalendar-month, 
@@ -51,6 +52,34 @@ td.MMM-BICalendar-firstDayOfMonth {
     border-left: 1px solid rgb(153, 153, 153);
 }
 
+td.MMM-BICalendar-weekday-day-1 span.MMM-BICalendar-stripText {
+    width: 86%;
+}
+    
+td.MMM-BICalendar-weekday-day-2 span.MMM-BICalendar-stripText {
+    width: 73%;
+}
+    
+td.MMM-BICalendar-weekday-day-3 span.MMM-BICalendar-stripText {
+    width: 60%;
+}
+    
+td.MMM-BICalendar-weekday-day-4 span.MMM-BICalendar-stripText {
+    width: 47%;
+}
+    
+td.MMM-BICalendar-weekday-day-5 span.MMM-BICalendar-stripText {
+    width: 34%;
+}
+    
+td.MMM-BICalendar-weekday-day-6 span.MMM-BICalendar-stripText {
+    width: 21%;
+}
+    
+td.MMM-BICalendar-weekday-day-7 span.MMM-BICalendar-stripText {
+    width: 9%;
+}
+    
 .MMM-BICalendar-day {
     text-align: center;
 }
@@ -126,4 +155,5 @@ div.MMM-BICalendar-stripEndInnerPadding {
     
 .MMM-BICalendar-stripText {
     position: absolute;
+    overflow: hidden;
 }
