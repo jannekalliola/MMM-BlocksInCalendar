@@ -7,9 +7,7 @@
  */
 
 const https = require("https");
-const digest = require("digest-fetch");
 const ical = require("node-ical");
-const fetch = require("fetch");
 const Log = require("logger");
 const NodeHelper = require("node_helper");
 const CalendarUtils = require("./calendarutils");
@@ -53,8 +51,6 @@ const CalendarFetcher = function (url, reloadInterval, excludedEvents, showWeeks
 		if (auth) {
 			if (auth.method === "bearer") {
 				headers.Authorization = `Bearer ${auth.pass}`;
-			} else if (auth.method === "digest") {
-				fetcher = new digest(auth.user, auth.pass).fetch(url, { headers: headers, agent: httpsAgent });
 			} else {
 				headers.Authorization = `Basic ${Buffer.from(`${auth.user}:${auth.pass}`).toString("base64")}`;
 			}
